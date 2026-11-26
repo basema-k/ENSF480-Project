@@ -1,6 +1,6 @@
 import java.time.LocalDate;
 import java.util.ArrayList;
-package backend;
+package Backend;
 
 /**
  * The manager class for handling flight operations.

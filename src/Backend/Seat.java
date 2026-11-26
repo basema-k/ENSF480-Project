@@ -1,3 +1,4 @@
+package Backend;
 /**
  * The class holding a seat with its specific information such as the letter and number of the seat.
  * 
