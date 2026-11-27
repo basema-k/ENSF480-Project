@@ -1,4 +1,7 @@
-package Backend;
+package backend;
+
+import java.time.LocalDate;
+import java.util.ArrayList;
 
 /**
  * The class holding the payment information.
