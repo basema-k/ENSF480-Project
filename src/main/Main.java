@@ -1,7 +1,10 @@
-package main;
+package Backend;
+
+import GUI.GUI;
 
 class Main {
     public static void main(String[] args) {
-        System.out.println("480 Term Project");
+        GUI gui = new GUI();
+        gui.start();
     }
 }
