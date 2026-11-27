@@ -1,6 +1,4 @@
 package Backend;
-import java.time.LocalDate;
-import java.util.ArrayList;
 
 /**
  * The class holding the payment information.
@@ -10,6 +8,35 @@ import java.util.ArrayList;
  * @since 2026-11-25 
  */
 
-public class Payment {
 
+interface Payment {
+    public void isValidPayment();
+
+}
+
+class CreditCardPayment implements Payment{
+    @Override 
+    public void isValidPayment(){
+        
+    }
+
+}
+
+class PayPalPayment implements Payment{
+    @Override
+    public void isValidPayment(){
+        
+    }
+}
+
+class Context {
+    private Payment payment;
+
+    public Context(Payment payment){
+        this.payment = payment;
+    }
+
+    public void executePayment(){
+        payment.isValidPayment();
+    }
 }
